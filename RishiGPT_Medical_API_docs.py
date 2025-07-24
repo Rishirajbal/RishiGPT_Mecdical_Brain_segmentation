@@ -16,7 +16,7 @@ from gradio_client import Client, handle_file
 client = Client("rishirajbal/RishiGPT_Medical_Brain_Segmentation")
 result = client.predict(
     image_input=handle_file('https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png'),
-    groq_api_key="Hello!!",
+    groq_api_key="Your_API_Key",
     api_name="/predict"
 )
 print(result)
@@ -42,7 +42,7 @@ const exampleImage = await response.blob();
 const client = await Client.connect("rishirajbal/RishiGPT_Medical_Brain_Segmentation");
 const result = await client.predict("/predict", {
     image_input: exampleImage,
-    groq_api_key: "Hello!!",
+    groq_api_key: "Your_API_Key",
 });
 
 console.log(result.data);
@@ -63,7 +63,7 @@ elif choice == "cURL":
 curl -X POST https://rishirajbal-rishigpt-medical-brain-segmentation.hf.space/gradio_api/call/predict -s -H "Content-Type: application/json" -d '{
   "data": [
     {"path":"https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png","meta":{"_type":"gradio.FileData"}},
-    "Hello!!"
+    "Your_API_Key"
   ]
 }' \
   | awk -F'"' '{ print $4}'  \

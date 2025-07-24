@@ -14,4 +14,5 @@ Explainability & Q&A: Integrated with LangChain to provide detailed answers abou
 Scalable & Modular: Built to support further extensions, including quantum machine learning experiments and hybrid classical–quantum workflows.
 
 Model Repository: UNet++ — [Brain Tumor Segmentation](https://huggingface.co/rishirajbal/UNET_plus_plus_Brain_segmentation)
+
 Live Application: RishiGPT [Medical — Brain Segmentation](https://huggingface.co/spaces/rishirajbal/RishiGPT_Medical_Brain_Segmentation)

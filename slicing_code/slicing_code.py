@@ -90,8 +90,8 @@ for img_name in tqdm(test_img_files):
 
         img_slice_norm = normalize_img(img_slice)
 
-        # Since there is no mask for test data, just save the slice with a "no_tumor" tag
+     
         img_filename = f"{img_name.replace('.nii.gz', '').replace('.nii','')}_slice{slice_idx}_no_tumor.png"
         cv2.imwrite(os.path.join(output_test_images, img_filename), img_slice_norm)
 
-print("\n✅ Done Smartly! Saved clean slices inside '2D_dataset' 🚀")
+print("\nDone Smartly! Saved clean slices inside '2D_dataset' 🚀")
